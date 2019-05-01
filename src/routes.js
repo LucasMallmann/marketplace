@@ -18,7 +18,7 @@ routes.post(
   handle(controllers.UserController.store)
 )
 
-// test
+// All routes below need authentication
 routes.use(authMiddleware)
 
 /**
