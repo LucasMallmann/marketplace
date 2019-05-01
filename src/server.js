@@ -12,6 +12,7 @@ class App {
   }
 
   database () {
+    mongoose.set('useFindAndModify', false)
     mongoose.connect(databaseConfig.uri, {
       useNewUrlParser: true,
       useCreateIndex: true
